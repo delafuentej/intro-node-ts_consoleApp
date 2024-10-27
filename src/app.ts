@@ -1,9 +1,9 @@
 
-import { yarg } from "./config/yargs.plugin";
+import { yarg } from "./config/plugins/yargs.plugin";
 import { ServerApp } from "./presentation/server-app";
 
 ( async()=> {
-        await main();
+         await main();
         
 })()
 

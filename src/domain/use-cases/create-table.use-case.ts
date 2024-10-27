@@ -19,11 +19,12 @@ export class CreateTable implements CreateTableUseCase{
         ============================
             Table x ${basis}
         ============================
-        \n
         `
         let output= `${header}`;
         for(let i=1; i<= limit; i++){
-            output += `${basis} x ${i} = ${basis*i}\n`; 
+            output += `${basis} x ${i} = ${basis*i}`; 
+            
+            if(i < limit) output += '\n';
         }
         return output;
     }

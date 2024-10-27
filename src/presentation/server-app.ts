@@ -10,7 +10,7 @@ interface RunOptions {
 }
 
 export class ServerApp {
-    static run({basis, limit,showTable, fileName, fileDestination}: RunOptions){
+     static run({basis, limit,showTable, fileName, fileDestination}: RunOptions){
         console.log('Server is running...');
 
        const table = new CreateTable().execute({basis, limit});
@@ -23,7 +23,7 @@ export class ServerApp {
     })
        if(showTable) console.log(table);
        (fileCreated) ? 
-       console.log(`File name:${fileName} was created in folder:${fileDestination}!`)
+       console.log(`File created!`)
        : 
        console.log('File could not be created');
     }

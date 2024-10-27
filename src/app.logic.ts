@@ -1,5 +1,5 @@
 import { writeFileSync, mkdirSync } from "fs";
-import { yarg } from "./config/yargs.plugin";
+import { yarg } from "./config/plugins/yargs.plugin";
 
 const {b:basis, l:limit, s:showTable} = yarg;
 

@@ -1,10 +1,6 @@
 import { writeFileSync, mkdirSync } from "fs";
 
 
-
-
-
-
 for(let basis=1; basis<= 10;basis++){
     let output = '';
     const header = `
